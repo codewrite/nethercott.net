@@ -3,7 +3,7 @@
  * https://github.com/Wruczek/Bootstrap-Cookie-Alert
  * Released under MIT license
  */
-(function () {
+function ShowCookieBanner() {
     "use strict";
 
     var cookieAlert = document.querySelector(".cookiealert");
@@ -50,4 +50,4 @@
         }
         return "";
     }
-})();
+}
