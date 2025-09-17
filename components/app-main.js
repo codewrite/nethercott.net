@@ -2,15 +2,9 @@ import MainHeader from './main-header.js'
 import MainFrame from './main-frame.js'
 import MainFooter from './main-footer.js'
 const AppMain = {
-  components: {
-    MainHeader, MainFrame, MainFooter
-  },
-  props: {
-  },
-  data() {
-    return {
-    }
-  },
+  components: { MainHeader, MainFrame, MainFooter },
+  props: {},
+  data() {return {}},
   template: /*html*/`
     <div>
       <main-header></main-header>
@@ -18,8 +12,7 @@ const AppMain = {
       <main-footer></main-footer>
     </div>
   `,
-  methods: {
-  },
+  methods: {},
   created: function() {
     debugMessage('AppMain created');
   }

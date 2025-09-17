@@ -1,10 +1,6 @@
 export default  {
-  props: {
-  },
-  data: function() {
-    return {
-    }
-  },
+  props: {},
+  data: function() {return {}},
   template: /*html*/`
     <div class="alert alert-dismissible text-center cookiealert" role="alert" style="padding:5px">
       <div class="cookiealert-container">
@@ -20,8 +16,7 @@ export default  {
     pageVersion: function() { return indexPageVersion; },
     lastModified: function() { return new Date(document.lastModified).toDateString() }
   },
-  created: function() {
-  },
+  created: function() {},
   mounted: function() {
     ShowCookieBanner();
   }

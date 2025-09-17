@@ -3,12 +3,8 @@ export default  {
   components: {
     CookieAlert
   },
-  props: {
-  },
-  data: function() {
-    return {
-    }
-  },
+  props: {},
+  data: function() {return {}},
   template: /*html*/`
     <div>
       <hr/>

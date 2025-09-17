@@ -5,14 +5,9 @@ const MainFrame = defineAsyncComponent(() => {
     axios.get("./views/" + globals.framePage + ".html?v=" + indexPageVersion).then(response => {
       resolve({
         template: response.data,
-        props: {
-        },
-        data: function() {
-          return {
-          }
-        },
-        methods: {
-        },
+        props: {},
+        data: function() {return {}},
+        methods: {},
         computed: {
           frame() {
             return globals.framePage;

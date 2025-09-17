@@ -1,7 +1,5 @@
 export default  {
-  props: {
-    frame: String
-  },
+  props: {},
   data: function() {
     return {
       headers: { "home": { title: "Welcome to the Nethercott Website", subtitle: "Hi, my name is Jon Nethercott, and I maintain the Nethercott.Net website." },
