@@ -16,10 +16,10 @@ export default  {
     `,
     computed: {
       title() {
-        return this.headers[globals.framePage].title;
+        return (this.headers[globals.framePage] ?? {title:''}).title;
       },
       subtitle() {
-        return this.headers[globals.framePage].subtitle;
+        return (this.headers[globals.framePage] ?? {subtitle:''}).subtitle;
       }
     },
     created: function() {

@@ -2,7 +2,8 @@ const { defineAsyncComponent } = Vue
 
 const MainFrame = defineAsyncComponent(() => {
   return new Promise((resolve, reject) => {
-    axios.get("./views/" + globals.framePage + ".html?v=" + indexPageVersion).then(response => {
+    axios.get("./views/" + globals.framePage + ".html?v=" + indexPageVersion)
+    .then(response => {
       resolve({
         template: response.data,
         props: {},
@@ -17,6 +18,10 @@ const MainFrame = defineAsyncComponent(() => {
           debugMessage('Frame created');
         }
       })
+    })
+    .catch(error => {
+      debugMessage(error);
+      resolve({ template: 'Error: ' + error.status })
     })
   })
 })
